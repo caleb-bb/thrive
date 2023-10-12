@@ -1,0 +1,32 @@
+#+title: Readme
+#+author: Caleb Beers
+
+Thrive
+A game engine focused on small teams and procedural generation
+
+* Pre-Development Agenda
+** Books
+1. _Command Line Rust_ to get started learning the language.
+2. _Foundations of Game Engine Development_, vols I and II. Learn the underlying math! This one requires the most attention.
+3. _Game Programming Patterns_, found at https://gameprogrammingpatterns.com/. This is just to be read, not worked out. If I want to use a pattern later, I can use this thing called a search engine and write "<name of pattern> Rust".
+
+Only the first one need be completely finished before starting development. The others can be a read-as-we-go deal.
+
+** Activities
+*** Game building
+Build a basic 3D game (by following a tutorial) in Unity, Unreal 4, or both. The goal is to get familiar with the features and what it feels like to build a game in each. A few hours in each should suffice for the beginning, but /should be a recurring step/, regularly returning to see what's available on the "top level" of oter engines.
+*** Research
+ Consume many videos and podcasts on general game engine development. Always be listening to them. /This should primarily be high-level material/, focused on things like architecture and processes rather than the niceties of code.
+
+* Development (tentative)
+1. Bootstrap. This means *basic systems*, including, but not limited to:
+   1. File I/O
+   2. Logging
+2. *Networking layer* for multiplayer. This means set up the client and server, and at least get some text packets going in TCP.
+3. *Graphics API*. Pick a graphics library, such as OpenGL or Vulcan or whatever, and figure out how we're gonna initialize/interact with it. Try to set up the abstraction so that we can change our minds later if we want, if that's feasible.
+4. *Asset pipeline*, at a high level. Just determine how we're gonna import assets and get the interface in place.
+5. *UI*, meaning UI for the game designer. This happens at such an early stage because we need to be able to dick with the engine from the developer perspective during developing.
+6. *World and scene graph*. A scene graph, or world graph, is just a DAG that puts objects in a hierarchy. If I move my arm, then my hand must move, too. We could represent this in our scene graph by making the hand node a child of the arm node. Simple.
+7. *Client state* for client and server. Suppose an object moves around in the server and all the clients need to see it. The plumbing in the networking layer to enable that must be built at this stage.
+8. *Physics*. Pick a physics engine or write one. Probably pick one, at least to begin. Figure out how to treat physics over the network. Think: how would two people play a ping-pong game over this network? How would the physics work?
+9. *Tools*. All the level editors, asset importers, whatever else. The mantra at this stage will have to be "I am the only person who actually likes the terminal", because game devs want pointy-clicky tools.
