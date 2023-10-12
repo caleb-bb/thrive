@@ -16,7 +16,9 @@ Only the first one need be completely finished before starting development. The 
 *** Game building
 Build a basic 3D game (by following a tutorial) in Unity, Unreal 4, or both. The goal is to get familiar with the features and what it feels like to build a game in each. A few hours in each should suffice for the beginning, but /should be a recurring step/, regularly returning to see what's available on the "top level" of oter engines.
 *** Research
- Consume many videos and podcasts on general game engine development. Always be listening to them. /This should primarily be high-level material/, focused on things like architecture and processes rather than the niceties of code.
+ Consume many videos and podcasts on general game engine development. Always be listening to them. /This should primarily be high-level material/, focused on things like architecture and processes rather than the niceties of code. Also use:
+ 1. https://gamedev.net
+ 2. https://learnopengl.com, even if we're not using opengl.
 
 * Development (tentative)
 1. Bootstrap. This means *basic systems*, including, but not limited to:
